@@ -6,23 +6,23 @@
 
 ## 下载
 
-**当前分发版本：1.1.0-beta.43（测试版）**
+**当前分发版本：1.1.0-beta.45（测试版）**
 
 | 平台 | 下载 | 状态 |
 | --- | --- | --- |
-| Windows x64 安装版 | [下载安装程序](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.43/MF-Design-Center-1.1.0-beta.43-win-x64.exe) | 推荐 |
-| Windows x64 ZIP 版 | [下载安装目录 ZIP](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.43/MF-Design-Center-1.1.0-beta.43-win-x64.zip) | 解压完整目录后运行 |
+| Windows x64 安装版 | [下载安装程序](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.45/MF-Design-Center-1.1.0-beta.45-win-x64.exe) | 推荐 |
+| Windows x64 ZIP 版 | [下载安装目录 ZIP](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.45/MF-Design-Center-1.1.0-beta.45-win-x64.zip) | 解压完整目录后运行 |
 | macOS | 暂无安装包 | 后续提供并验证后发布 |
 
-[全部版本与更新说明](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases) · [文件 SHA-256 校验值](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.43/SHA256SUMS.txt)
+[全部版本与更新说明](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases) · [文件 SHA-256 校验值](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.45/SHA256SUMS.txt)
 
 请下载 Release 附件中的 `.exe` 或 Windows ZIP。GitHub 自动生成的 `Source code (zip/tar.gz)` 只包含本仓库说明文件，不是软件安装包。测试版请从上方指定链接或“全部版本”下载。
 
-## beta.43 新增主题风格
+## beta.45 主题与背景修复
 
-安装后点击左下角“主题风格”，开启开关并选择：**薄荷清透、珠光漫彩、轻盈橙白、晶透琉璃或自定义**。自定义默认薄荷绿＋柔雾粉，可调两种颜色、渐变方向、透明度与模糊程度。
+安装后点击左下角“主题风格”，点选 **薄荷清透、珠光漫彩、轻盈橙白、晶透琉璃或自定义** 即可预览，点击“应用主题”保存。自定义支持两种颜色和渐变方向，也可使用本地图片背景，选择填充、适应、拉伸、平铺或居中，并调节透明度与模糊程度。
 
-调节即时预览，点击“应用”保存；每套参数独立记忆。首次升级保持原皮肤，关闭新主题即可恢复原来的外观。软件内图文指南已补充实际截图和切换演示。
+主题启用后配色和材质优先于原外观，关闭主题恢复原外观。已修复主题与外观入口同时高亮、按钮拥挤等问题；主窗口与收藏小窗口同步预览和保存，切换页面撤销未应用的预览。建议 beta.43 用户升级至 beta.45。软件内图文指南已更新。
 
 ## 主要功能
 
@@ -44,12 +44,12 @@
 当前安装包未配置代码签名，Windows 可能显示未知发布者提示。可先使用下列命令核对文件哈希，再自行决定是否安装：
 
 ```powershell
-Get-FileHash .\MF-Design-Center-1.1.0-beta.43-win-x64.exe -Algorithm SHA256
+Get-FileHash .\MF-Design-Center-1.1.0-beta.45-win-x64.exe -Algorithm SHA256
 ```
 
 ## 在线更新怎么使用
 
-**beta.40 及更早版本需要先手动安装 beta.43 一次。** beta.41 起已经具备更新检查能力。
+**beta.40 及更早版本需要先手动安装 beta.45 一次。** beta.41 起已经具备更新检查能力。
 
 - 默认在启动约 25 秒后尝试检查；距离上次检查不足 6 小时会跳过当次启动检查，运行期间每 6 小时检查一次。
 - 可在“设置与备份 → 软件更新”手动点击“检查更新”。
