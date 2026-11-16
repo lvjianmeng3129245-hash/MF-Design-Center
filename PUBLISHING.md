@@ -4,10 +4,10 @@
 
 ## 每次发布
 
-1. 在本地开发项目递增版本号并构建、测试，例如 `1.1.0-beta.47`。
+1. 在本地开发项目递增版本号并构建、测试，例如 `1.1.0-beta.48`。
 2. 保留应用 ID `local.mfdesign.promptlibrary` 和原资料目录，验证安装包中的版本号及更新源。
 3. 运行 `node scripts/prepare-update-release.mjs` 校验更新清单并生成 SHA-256 文件和附件名单。Windows 安装包必须保留命名 `MF-Design-Center-<版本>-win-x64.exe`。
-4. 创建草稿 Release，标签为 `v<版本>`，例如 `v1.1.0-beta.47`。填写准确的更新说明。
+4. 创建草稿 Release，标签为 `v<版本>`，例如 `v1.1.0-beta.48`。填写准确的更新说明。
 5. 上传同一轮构建的 EXE、`latest.yml`、EXE.blockmap、Windows ZIP 和 SHA256SUMS.txt；确认附件状态为 uploaded，大小和哈希正确。为提高大文件上传稳定性，EXE 与 ZIP 可逐个上传。
 6. 测试版勾选 Pre-release 后发布；正式版例如 `v1.1.0` 不勾选。
 7. 用低一版本的软件和独立测试资料检查真实更新、更新说明和下载链接；同时确认当前版本不会提示自己更新。
