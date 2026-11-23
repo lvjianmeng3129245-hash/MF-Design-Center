@@ -6,27 +6,34 @@
 
 ## 下载
 
-**当前分发版本：1.1.0-beta.47（测试版）**
+**当前分发版本：1.1.0-beta.49（测试版）**
 
 | 平台 | 下载 | 状态 |
 | --- | --- | --- |
-| Windows x64 安装版 | [下载安装程序](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.47/MF-Design-Center-1.1.0-beta.47-win-x64.exe) | 推荐 |
-| Windows x64 ZIP 版 | [下载安装目录 ZIP](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.47/MF-Design-Center-1.1.0-beta.47-win-x64.zip) | 解压完整目录后运行 |
+| Windows x64 安装版 | [下载安装程序](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.49/MF-Design-Center-1.1.0-beta.49-win-x64.exe) | 推荐 |
+| Windows x64 ZIP 版 | [下载安装目录 ZIP](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.49/MF-Design-Center-1.1.0-beta.49-win-x64.zip) | 解压完整目录后运行 |
 | macOS | 暂无安装包 | 后续提供并验证后发布 |
 
-[全部版本与更新说明](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases) · [文件 SHA-256 校验值](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.47/SHA256SUMS.txt)
+[全部版本与更新说明](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases) · [文件 SHA-256 校验值](https://github.com/lvjianmeng3129245-hash/MF-Design-Center/releases/download/v1.1.0-beta.49/SHA256SUMS.txt)
 
 请下载 Release 附件中的 `.exe` 或 Windows ZIP。GitHub 自动生成的 `Source code (zip/tar.gz)` 只包含本仓库说明文件，不是软件安装包。测试版请从上方指定链接或“全部版本”下载。
 
-## beta.47 贴图透明度优化
+## beta.49 贴图与快捷键优化
+
+- 隐藏旧贴图后，可用截图的 **Ctrl+T** 贴出新图，原来隐藏的贴图继续隐藏。
+- **F3** 切换本组贴图显示/隐藏，减少重复显示和界面刷新。
+- 鼠标移到贴图上，**F2** 切换鼠标穿透，再按一次恢复；重命名改为 **Shift+F2**。
+- 拖动更流畅，松手保存最终位置。快捷键如被其他软件占用，请检查设置与冲突。
 
 桌面贴图 **Ctrl+滚轮** 调整透明度改为平滑过渡，连续输入跟随最新目标；停止滚动后合并保存，减少逐格磁盘写入和全窗口刷新。保留 20%–100% 范围、锁定、反向调节和普通滚轮缩放，隐藏、关闭及退出后仍保存最终值。
 
 ## 软件内更新
 
-Windows 安装版支持 **软件内下载 → 显示进度并校验 → 点击“重启并安装” → 自动覆盖升级并重新打开**。下载完成不会擅自退出；未保存内容允许取消重启。收藏、便签、导图和设置继续保留。
+Windows 安装版和新版完整 ZIP 版支持 **软件内下载 → 显示进度并校验 → 点击“重启并安装” → 自动覆盖升级并重新打开**。下载完成不会擅自退出；未保存内容允许取消重启。收藏、便签、导图和设置继续保留。
 
-**beta.46 Windows 安装版可以在软件内更新到 beta.47。beta.45 及以前、以及 ZIP 版，请先手动安装最新 Windows 安装版一次。**
+**beta.46 及以上安装版、beta.48 及以上完整 ZIP 版，可以在软件内更新到 beta.49。** beta.47 及以前 ZIP 版需先手动下载并完整解压新版一次，或改用安装版；beta.45 及以前安装版需手动安装新版一次。
+
+ZIP 版请完整解压到独立程序文件夹。软件内升级时，会在当前文件夹覆盖并转为安装版；磁盘/桌面根目录、不完整副本等不支持自动覆盖，软件会提示整理目录。
 
 ## 主题与背景
 
@@ -54,21 +61,21 @@ Windows 安装版支持 **软件内下载 → 显示进度并校验 → 点击�
 当前安装包未配置代码签名，Windows 可能显示未知发布者提示。可先使用下列命令核对文件哈希，再自行决定是否安装：
 
 ```powershell
-Get-FileHash .\MF-Design-Center-1.1.0-beta.47-win-x64.exe -Algorithm SHA256
+Get-FileHash .\MF-Design-Center-1.1.0-beta.49-win-x64.exe -Algorithm SHA256
 ```
 
 ## 在线更新怎么使用
 
-**beta.46 安装版开始支持软件内升级。beta.45 及更早版本需要先手动安装最新安装版一次。** beta.41–45 的更新按钮仍通过浏览器下载，这是旧版自身的行为。
+**beta.46 起安装版支持软件内升级，beta.48 起完整 ZIP 版也支持。** 更早的版本需要先手动升级一次，旧客户端的按钮行为不能通过 GitHub 远程改变。
 
 - 默认在启动约 25 秒后尝试检查；距离上次检查不足 6 小时会跳过当次启动检查，运行期间每 6 小时检查一次。
 - 可在“设置与备份 → 软件更新”手动点击“检查更新”。
 - 更新来源：`https://github.com/lvjianmeng3129245-hash/MF-Design-Center`。
 - 当前发布的是测试版，请开启“接收测试版更新”。关闭后仅接收正式版。
-- 安装版发现更高版本后显示更新说明，点击“立即更新”在软件内下载，支持取消和失败重试。
+- 支持软件内更新的版本发现更高版本后显示说明，点击“立即更新”下载，支持取消和失败重试。
 - 校验完成后点击“重启并安装”，自动覆盖升级并重新打开；可以选择“稍后安装”。普通退出不会自动安装。
 - 有未保存内容可取消重启；录制、备份或恢复进行中需先完成当前工作。建议提前导出完整备份。
-- ZIP 版仍提供浏览器下载安装入口，请运行安装程序以启用软件内升级。
+- 新版 ZIP 需要完整解压到独立文件夹；软件内升级会覆盖当前程序并转为安装版，资料目录保持不变。
 - 软件完全退出或无法连接 GitHub 时不能检查更新；网络失败可稍后手动重试。
 
 ## 问题反馈
